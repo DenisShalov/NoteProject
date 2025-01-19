@@ -1,0 +1,275 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: translateY(2px);
+}
+
+
+.container {
+    height: 100%;
+    width: 100%;
+    max-width: 1150px;
+    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-color: rgba(161, 121, 0, 0.122);
+}
+
+.heder-wraper {
+    display: flex;
+    justify-content: space-between
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.main {
+    background-color: rgba(255, 253, 240, 0.556);
+}
+
+.form {
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.button-wraper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.text-wraper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 4;
+}
+
+.stack {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.radio-button input[type='radio'] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+
+}
+
+.radio-button span::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    display: inline-block;
+    opacity: 0.50;
+}
+
+.radio-button span {
+    position: relative;
+    cursor: pointer;
+}
+
+.radio-button span::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: -50px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    opacity: 0;
+}
+
+.radio-red span::before {
+    background-color: rgb(255, 0, 0);
+
+}
+
+.radio-green span::before {
+    background-color: rgb(0, 128, 0);
+
+}
+
+.radio-blue span::before {
+    background-color: rgb(0, 0, 255);
+
+}
+
+.radio-yellow span::before {
+    background-color: rgb(255, 221, 0);
+
+}
+
+.radio-purple span::before {
+    background-color: rgb(128, 0, 128);
+}
+
+.radio-button input[type='radio']:checked+span::before {
+    opacity: 1;
+}
+
+input,
+select,
+fieldset,
+textarea,
+label,
+legend input::placeholder,
+select::placeholder,
+textarea::placeholder {
+    color: #95a1bb;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    font-family: inherit;
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #95a1bb;
+    border-radius: 4px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+    width: 230px;
+    height: 50px;
+    border: 1px solid #95a1bb;
+    border-radius: 4px;
+    flex-grow: 1;
+}
+
+input[type="radio"],
+input[type="date"],
+input[type="checkbox"],
+select {
+    cursor: pointer;
+}
+
+.button {
+    width: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #fff;
+    border-radius: 2vh;
+    height: 51px;
+    background-color: #0a61f7;
+    cursor: pointer;
+}
+
+.filter-box {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.notes-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.note {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(234, 236, 139);
+    width: 100%;
+    max-width: 355px;
+}
+
+.note-title {
+    display: flex;
+    background-color: rgb(236, 205, 139);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.FavoriteNote {
+    padding-left: 1.2em;
+
+}
+
+.isFavoriteNote {
+    position: relative;
+    appearance: none;
+
+}
+
+.imageNote {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.imageNote::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/icons/heart_inactive.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.isFavoriteNote:checked+.imageNote::before {
+    background-image: url(../images/icons/heart_active.svg);
+}
+
+
+
+.message-box {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.message-box.success {
+    border-color: green;
+    color: green;
+}
+
+.message-box.error {
+    border-color: red;
+    color: red;
+}

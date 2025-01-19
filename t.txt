@@ -1,0 +1,26 @@
+<!-- Рабочий прототип -->
+                <li id="${movie.id}" class="note">
+                    <b class="note-title">${input.title}
+                        <b>
+                            <label class="FavoriteNoteLabel">
+                                <input class="isFavoriteNote" type="checkbox"></input>
+                                <span class="imageNote"></span>
+                            </label>
+                            <button class="delete-button" type="button"><img class="delete-button" src="images/icons/trash.svg" alt=""></button>
+                        </b>
+                    </b>
+                    <p class="note-description">${note.description} Посвящение
+                        Для вас, души моей царицы,
+                        Красавицы, для вас одних
+                        Времен минувших небылицы,
+                        В часы досугов золотых,
+                        Под шепот старины болтливой,
+                        Рукою верной я писал;
+                        Примите ж вы мой труд игривый!
+                        Ничьих не требуя похвал,
+                        Счастлив уж я надеждой сладкой,
+                        Что дева с трепетом любви
+                        Посмотрит, может быть, украдкой
+                        На песни грешные мои.</p>
+                </li>
+<!-- Рабочий прототип -->

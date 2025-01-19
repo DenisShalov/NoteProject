@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Notes</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="heder-wraper">
+                <a class="logo" href="https://it-incubator.io/">
+                    <img src="images/icons/📝Notes.svg" alt="link">
+                </a>
+                <h2 class="counter"><img src="images/icons/notes.svg" alt="note"><span id="number-of-notes"></span></h2>
+            </div>
+
+        </div>
+    </header>
+    <section class="main">
+        <div class="container">
+            <form class="form">
+                <div class="text-wraper">
+                    <label for="input-title">Название заметки </label>
+                    <input class="input-title" type="text" placeholder="Напиши название новой заметки...">
+
+                    <label for="note-description">Описание заметки</label>
+                    <textarea id="note-description" class="input-description"
+                        placeholder="Напиши описание новой заметки..."></textarea>
+                </div>
+                <div class="button-wraper">
+                    <!-- выбор цветов для заметки -->
+                    <label for="stack">Выберите цвет заметки</label>
+                    <div class="stack">
+
+                        <label class="radio-button radio-red">
+                            <input type="radio" name="stack" value="RED">
+                            <span></span>
+                        </label>
+                        <label class="radio-button radio-green">
+                            <input type="radio" name="stack" value="GREEN">
+                            <span></span>
+                        </label>
+                        <label class="radio-button radio-blue">
+                            <input type="radio" name="stack" value="BLUE">
+                            <span></span>
+                        </label>
+                        <label class="radio-button radio-yellow">
+                            <input type="radio" name="stack" value="YELLOW" checked>
+                            <span></span>
+                        </label>
+                        <label class="radio-button radio-purple">
+                            <input type="radio" name="stack" value="PURPLE">
+                            <span></span>
+                        </label>
+                    </div>
+                    <!-- _______________ -->
+                    <button class="button" type="submit">&#x2318 Добавить заметку</button>
+                </div>
+
+            </form>
+
+            <div class="filter-box">
+                <lebel><input type="checkbox" name="HTML">Показать только избранные заметки</lebel>
+            </div>
+            <ul class="notes-list">
+            </ul>
+            <div class="message-box"></div>
+        </div>
+    </section>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
