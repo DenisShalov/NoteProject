@@ -132,19 +132,20 @@ const colors = {
 
 
 const model = {
-    notes: MOCK_NOTES,
+    notes: [],
     addNote(title, content, color, isFavorite) {
         const id = Math.random()
         const newNote = { id, title, content, color, isFavorite }
         this.notes.unshift(newNote)
         view.renderNotes(this.notes);
         this.coutnNotes();
-
+        this.sayCreateNote()
     },
     deleteNote(noteId) {
         this.notes = this.notes.filter((note) => note.id !== noteId);
         view.renderNotes(this.notes);
         this.coutnNotes();
+        this.sayCreateNote();
     },
 
     // ..._____________________________________________________________________________________________
@@ -182,13 +183,27 @@ const model = {
     coutnNotes() {
         const numberNotesElement = document.getElementById('number-of-notes');
         numberNotesElement.textContent = ` Всего заметок: ${model.notes.length} `;
+    },
+
+    sayCreateNote(){
+        const inputFilter = document.querySelector('.filter-box');
+        const notNotes = document.querySelector('.notNotes');
+        if(this.notes.length === 0){
+            notNotes.classList.remove("invisible");
+            inputFilter.classList.add("invisible");
+        }else{
+            inputFilter.classList.remove("invisible");
+            notNotes.classList.add("invisible");
+            
+        }
     }
 }
 
 const view = {
     init() {
         this.renderNotes(model.notes);
-        model.coutnNotes()
+        model.coutnNotes();
+        model.sayCreateNote();
         const form = document.querySelector('.form');
         const inputTitle = document.querySelector('.input-title');
         const inputDescription = document.getElementById('note-description');
