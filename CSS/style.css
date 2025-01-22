@@ -254,10 +254,17 @@ select {
 }
 
 
+.container-message {
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    z-index: 10;
+}
 
 .message-box {
     margin: 10px 0;
     padding: 10px;
+    max-width: 40vw;
     border: 1px solid transparent;
     border-radius: 5px;
 }

@@ -261,7 +261,7 @@ const view = {
             checkbox.addEventListener('change', function (event) {
                 event.preventDefault()
                 const noteId = +this.closest('li').id;
-                const note = model.notes.find(n => n.id === noteId); 
+                const note = model.notes.find(n => n.id === noteId);
                 if (note) {
                     note.isFavorite = this.checked;
                     view.displayMessage(`Заметка "${note.title}" была ${this.checked ? 'добавлена в избранное!' : 'удалена из избранного!'} `);
