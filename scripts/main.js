@@ -123,11 +123,11 @@ let isTimerStarted = false;
 
 
 const colors = {
-    GREEN: 'green',
-    BLUE: 'blue',
+    GREEN: 'rgba(136, 255, 0, 0.87)',
+    BLUE: 'rgb(0, 217, 255)',
     RED: 'red',
     YELLOW: 'yellow',
-    PURPLE: 'purple',
+    PURPLE: 'rgb(226, 58, 241)',
 }
 
 

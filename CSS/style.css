@@ -24,13 +24,14 @@ button:hover {
     height: 100%;
     width: 100%;
     max-width: 1150px;
-    padding: 0 20px;
+    padding: 20px;
     margin-left: auto;
     margin-right: auto;
 }
 
 header {
     background-color: rgba(161, 121, 0, 0.122);
+    box-shadow: 0px 4px 10px #8e7b6491;
 }
 
 .heder-wraper {
@@ -59,19 +60,23 @@ header {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    gap: 15px;
+    box-shadow: 5px 10px 20px #8e7b6491;
+    border-radius: 10px;
 }
 
 .button-wraper {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    padding: 24px 24px 24px 0;
 }
 
 .text-wraper {
     display: flex;
     flex-direction: column;
-    flex-grow: 4;
+    flex-grow: 7;
+    padding: 24px;
+
 }
 
 .stack {
@@ -142,9 +147,12 @@ header {
 }
 
 input,
-select,
-fieldset,
-textarea,
+textarea{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+}
+
 label,
 legend input::placeholder,
 select::placeholder,
@@ -153,16 +161,21 @@ textarea::placeholder {
     font-size: 16px;
     font-weight: 400;
     line-height: 22.4px;
-    font-family: inherit;
 }
 
 input[type="text"] {
-    width: 100%;
-    height: 50px;
+    width: 50%;
+    height: 35px;
     border: 1px solid #95a1bb;
-    border-radius: 4px;
+    border-radius: 10px;
+    margin: 0 0 15px 0;
 }
 
+textarea{
+    resize: none;
+    border-radius: 10px;
+    height: 85px;
+}
 
 input[type="radio"],
 input[type="checkbox"],
@@ -179,7 +192,7 @@ select {
     text-align: center;
     color: #fff;
     border-radius: 2vh;
-    height: 51px;
+    height: 36px;
     background-color: #0a61f7;
     cursor: pointer;
 }
@@ -187,6 +200,7 @@ select {
 .filter-box {
     display: flex;
     flex-direction: row-reverse;
+    padding: 24px 0 15px;
 }
 
 .notes-list {
@@ -197,20 +211,21 @@ select {
 }
 
 .note {
-    /* display: flex; */
     flex-direction: column;
     background-color: rgb(236, 233, 209);
     width: 100%;
     height: 100%;
     max-width: 355px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 5px 6px 20px #8e7b6491;
 }
 
 .note-title {
     display: flex;
-    /* background-color: rgb(236, 205, 139); */
     align-items: center;
     justify-content: space-between;
-
+    height: 50px;
+    border-radius: 10px 10px 0 0;
 }
 
 
@@ -267,6 +282,7 @@ select {
     max-width: 40vw;
     border: 1px solid transparent;
     border-radius: 5px;
+    box-shadow: 2px 5px 10px #978c7bad;
 }
 
 .message-box.success {
