@@ -6,6 +6,7 @@
 
 body {
     font-family: "Montserrat", sans-serif;
+    height: 100vh;
 }
 
 button {
@@ -53,6 +54,7 @@ header {
 
 .main {
     background-color: rgba(255, 253, 240, 0.556);
+    height: 100%;
 }
 
 .form {
