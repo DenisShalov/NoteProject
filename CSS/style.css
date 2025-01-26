@@ -59,8 +59,8 @@ header {
 }
 
 .form {
-    background-color: bisque;
     display: flex;
+    background-color: bisque;
     flex-direction: row;
     align-items: flex-end;
     box-shadow: 5px 10px 20px #8e7b6491;

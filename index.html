@@ -15,29 +15,37 @@
 </head>
 
 <body>
-    
+
     <header>
         <div class="container">
             <div class="heder-wraper">
                 <a class="logo" href="https://it-incubator.io/">
                     <img src="images/icons/📝Notes.svg" alt="link">
                 </a>
-                <h2 class="counter"><img src="images/icons/notes.svg" alt="note"><span id="number-of-notes"></span></h2>
+                <h2 class="counter">
+                    <img src="images/icons/notes.svg" alt="note">
+                    <span id="number-of-notes">
+                    </span>
+                </h2>
             </div>
 
         </div>
     </header>
     <section class="main">
         <div class="container">
-            
+
             <form class="form">
                 <div class="text-wraper">
                     <label for="input-title">Название заметки </label>
                     <input class="input-title" type="text" placeholder="Напиши название новой заметки...">
 
                     <label for="note-description">Описание заметки</label>
-                    <textarea id="note-description" class="input-description"
-                        placeholder="Напиши описание новой заметки..."></textarea>
+                    <textarea
+                        id="note-description" 
+                        class="input-description"
+                        placeholder="Напиши описание новой заметки..."
+                    >
+                    </textarea>
                 </div>
                 <div class="button-wraper">
                     <!-- выбор цветов для заметки -->
@@ -72,12 +80,14 @@
             </form>
 
             <div class="filter-box">
-                <lebel><input type="checkbox" name="HTML" value="ttt">Показать только избранные заметки</lebel> </div>
+                <lebel><input type="checkbox" name="HTML" value="ttt">Показать только избранные заметки</lebel>
+            </div>
 
             <div class="notNotes">
                 <h2>У вас нет еще ни одной заметки
-                <h2>Заполните поля выше и создайте свою первую заметку!</h2>
-            </h2></div>
+                    <h2>Заполните поля выше и создайте свою первую заметку!</h2>  <!--??? -->
+                </h2>
+            </div>
 
             <ul class="notes-list"></ul>
 
