@@ -205,7 +205,7 @@ const view = {
         model.coutnNotes();
         model.sayCreateNote();
         const form = document.querySelector('.form');
-        const inputTitle = document.querySelector('.input-title');
+        const inputTitle = document.getElementById('input-title');
         const inputDescription = document.getElementById('note-description');
         const stack = document.querySelectorAll('.radio-button input[type = "radio"]');
         const inputFilter = document.querySelector('.filter-box input[type = "checkbox"]');

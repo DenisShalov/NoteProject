@@ -163,6 +163,7 @@ label,
 input::placeholder,
 select::placeholder,
 textarea::placeholder {
+    font-family: "Montserrat", sans-serif;
     color: #95a1bb;
     font-size: 20px;
     font-weight: 400;
@@ -170,6 +171,7 @@ textarea::placeholder {
 }
 
 input[type="text"] {
+    font-family: "Montserrat", sans-serif;
     width: 50%;
     height: 35px;
     border: 1px solid #95a1bb;
@@ -178,6 +180,7 @@ input[type="text"] {
 }
 
 textarea {
+    font-family: "Montserrat", sans-serif;
     resize: none;
     border-radius: 10px;
     height: 85px;
@@ -310,6 +313,7 @@ select {
     flex-direction: column;
     align-items: center;
     z-index: 1;
+    text-align: center;
 }
 
 .invisible {

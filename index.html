@@ -37,7 +37,7 @@
             <form class="form">
                 <div class="text-wraper">
                     <label for="input-title">Название заметки </label>
-                    <input class="input-title" type="text" placeholder="Напиши название новой заметки...">
+                    <input id="input-title" type="text" placeholder="Напиши название новой заметки...">
 
                     <label for="note-description">Описание заметки</label>
                     <textarea
@@ -49,7 +49,7 @@
                 </div>
                 <div class="button-wraper">
                     <!-- выбор цветов для заметки -->
-                    <label for="stack">Выберите цвет заметки</label>
+                    <h2>Выберите цвет заметки</h2>
                     <div class="stack">
 
                         <label class="radio-button radio-red">
@@ -74,19 +74,19 @@
                         </label>
                     </div>
                     <!-- _______________ -->
-                    <button class="button" type="submit">&#x2318 Добавить заметку</button>
+                    <button class="button" type="submit">&#x2318; Добавить заметку</button>
                 </div>
 
             </form>
 
             <div class="filter-box">
-                <lebel><input type="checkbox" name="HTML" value="ttt">Показать только избранные заметки</lebel>
+                <p><input type="checkbox" name="HTML" value="ttt">Показать только избранные заметки</p>
             </div>
 
             <div class="notNotes">
-                <h2>У вас нет еще ни одной заметки
-                    <h2>Заполните поля выше и создайте свою первую заметку!</h2>  <!--??? -->
-                </h2>
+                
+                    <h2>У вас нет еще ни одной заметки Заполните поля выше и создайте свою первую заметку!</h2> 
+                
             </div>
 
             <ul class="notes-list"></ul>
